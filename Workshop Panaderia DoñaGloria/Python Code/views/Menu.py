@@ -18,7 +18,13 @@ def run_processes():
         print("")
         print("---------------------------------------------")
         print("")
-        teclado = int(input("Escribe aqui tu seleccion: "))
+
+        while True:
+            try:
+                teclado = int(input("Escribe aqui tu seleccion: "))
+                break
+            except ValueError:
+                print("Error ingresado, vuelva a intentar.")
 
         if teclado == 1:
             print("")
